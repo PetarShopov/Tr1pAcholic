@@ -1,5 +1,5 @@
 .wrapper {
-    /*background: url("../images/background.png") no-repeat center center fixed;*/
+    
     background-size: cover;
 }
 
@@ -48,17 +48,16 @@ input:focus {
 button {
     font: 16px Lato;
     color: white;
-    background-color: #06c0ab;
+    background-color: grey;
     padding: 8px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: 15px 25px 10px 25px;
     border: none;
     border-radius: 30px;
-    width: 50%;
+    width: 35%;
 }
 
 button:hover {
-    background-color: #565656;
+    color: #0099ff;
 }
 
 .form-link {
@@ -71,4 +70,10 @@ button:hover {
 
 #register-title {
     width: 200px;
+}
+
+.main-content {
+    background-image: url("images/paper.jpg") no-repeat center center fixed;
+    padding: 0px;
+    height: 700px;
 }

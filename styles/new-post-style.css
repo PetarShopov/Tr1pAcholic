@@ -3,7 +3,7 @@
 }
 
 .new-post-block {
-    background: #dadada;
+    background: #373F27;
     width: 60%;
     margin: 0 auto;
     padding: 20px;
@@ -20,7 +20,7 @@
 }
 
 #post-form {
-    background: #f2f2f2;
+    background: #636B46;
     border-radius: 20px;
     margin: 10px;
 }
@@ -33,7 +33,8 @@
 
 .content-field {
     resize: none;
-    border: 3px solid #f2f2f2;
+    border: 3px solid #E9E7DA;
+    background-color: #E9E7DA;
     outline: none;
     width: 550px;
     height: 300px;
@@ -41,15 +42,13 @@
     text-align: left;
     font: 12px Lato-Light;
     padding: 10px;
-    background-image: url("images/background.png");
-    
 }
 
 .content-field:focus {
     font: 12px Lato;
     font-weight: 100;
     outline: none;
-    border: 3px solid #06c0ab;
+    border: 3px solid #CDA34F;
 }
 
 
