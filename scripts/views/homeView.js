@@ -47,6 +47,7 @@ class HomeView {
                     blogPosts: mainData
                 };
                 let renderedPosts = Mustache.render(template, blogPosts);
+                 
                 $('.articles').html(renderedPosts);
             });
         });

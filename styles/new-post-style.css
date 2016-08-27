@@ -3,7 +3,7 @@
 }
 
 .new-post-block {
-    background: #373F27;
+    background: linear-gradient(#56585D, #2F3034);
     width: 60%;
     margin: 0 auto;
     padding: 20px;
@@ -12,15 +12,16 @@
 }
 
 #editor-title {
-    color: white;
+    color: #0099ff;
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font: 24px Lato-Black;
     text-align: center;
 }
 
 #post-form {
-    background: #636B46;
+    background: lightgray;
     border-radius: 20px;
     margin: 10px;
 }
@@ -34,7 +35,7 @@
 .content-field {
     resize: none;
     border: 3px solid #E9E7DA;
-    background-color: #E9E7DA;
+    background-color: white;
     outline: none;
     width: 550px;
     height: 300px;
@@ -48,7 +49,7 @@
     font: 12px Lato;
     font-weight: 100;
     outline: none;
-    border: 3px solid #CDA34F;
+    border: 3px solid #0099ff;
 }
 
 

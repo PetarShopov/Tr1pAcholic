@@ -4,6 +4,16 @@ class UserView {
         this._mainContentSelector = mainContentSelector;
     }
 
+    showAboutPage(){
+         let _that = this;
+
+         $.get('templates/about.html', function (template) {
+            let renderedWrapper = Mustache.render(template, null);
+            $(_that._wrapperSelector).html(renderedWrapper);
+        });
+    }
+
+
     showLoginPage(isLoggedIn) {
         let _that = this;
         let templateUrl;

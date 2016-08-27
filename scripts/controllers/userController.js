@@ -5,6 +5,10 @@ class UserController {
         this._appKey = appKey;
         this._baseServiceUrl = baseUrl + "/user/" + appKey + "/";
     }
+    
+    showAboutPage(){
+        this._userView.showAboutPage();
+    }
 
     showLoginPage(isLoggedIn) {
         this._userView.showLoginPage(isLoggedIn);

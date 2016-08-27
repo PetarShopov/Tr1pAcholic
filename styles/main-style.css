@@ -8,6 +8,7 @@ a {
     text-align: center;
     padding-top: 10px;
     font-weight: 600;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .subtitle {
@@ -26,16 +27,12 @@ a {
     word-wrap: break-word;
 }
 
-.articles {
-    margin-left: 5%;
-}
-
 .single-post {
     padding: 10px 20px 40px 20px;
     background-color: lightgrey;
     border-radius: 25px;
     margin-bottom: 100px;
-    margin-left: 70px;
+    margin-left: 20px;
     width: 90%;
     box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.51);
 }

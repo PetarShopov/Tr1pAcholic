@@ -1,142 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-@import url(https://fonts.googleapis.com/css?family=Oswald);
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*styles*/
 body {
     line-height: 1;
     font: 16px Lato;
@@ -177,14 +38,15 @@ header {
 }
 
 .blog-title {
-    width: 300px;
-    font: 40px Oswald;
+    width: 400px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
     font-weight: 400;
-    margin: 0px 110px 50px 440px;
+    margin: 0px 50px 80px 300px;
+    text-shadow: 1px 1px 6px #0099ff;
     color: #565656;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 8px solid #0099ff;
 }
 
 
@@ -195,10 +57,10 @@ header {
     text-align: center;
     padding: 9px 22px 9px 22px;
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 .single-menu-element-link:hover {
-    height: 27px;
     color: #0099ff;
 }
 
@@ -209,6 +71,15 @@ header {
     padding: 15px 15px;
     text-align: left;
     font-weight: bold; 
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%   {left:0px;}
+    50%  {left:500px;}
+    100% {left:0px;}
 }
 
 .single-menu-element {
@@ -231,6 +102,7 @@ section{
     margin: 0;
     overflow: hidden;
     top: 0;
+    height: 44px;
 }
 
 .recent-posts-title {
@@ -258,12 +130,10 @@ footer {
 }
 
 .main-content {
-    margin: 50px;
+    margin: 30px 150px 0px 140px;
 }
 
-
-
-/*dropdown1*/
+/*dropdown*/
 .dropbtn {
     display: inline-block;
     color: white;

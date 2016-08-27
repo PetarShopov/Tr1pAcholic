@@ -5,9 +5,10 @@
 
 .user-login-block {
     border-radius: 15px;
-    background-color: #f2f2f2;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    margin: 10% auto;
+    background-color: black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    opacity: 0.7;
+    margin: 5% auto;
     width: 35%;
     height: 55%;
     padding: 10px;
@@ -20,15 +21,6 @@ form {
     display: block;
 }
 
-.form-title {
-    font: 18px Oswald;
-    font-weight: 400;
-    color: #019c8c;
-    padding: 0 5px 5px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
 input {
     border-radius: 30px;
     border: 3px solid #f2f2f2;
@@ -39,20 +31,20 @@ input {
 }
 
 input:focus {
-    font: 12px Lato;
+    font: 15px Ariel;
     font-weight: 100;
     outline: none;
-    border: 3px solid #06c0ab;
+    border: 3px solid #0099ff;
 }
 
 button {
-    font: 16px Lato;
+    font-size: 16px;
     color: white;
-    background-color: grey;
-    padding: 8px;
+    background-color: darkslategrey;
+    padding: 5px;
     margin: 15px 25px 10px 25px;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 35%;
 }
 
@@ -60,16 +52,48 @@ button:hover {
     color: #0099ff;
 }
 
-.form-link {
-    text-decoration: none;
-    color: #048e76;
-    font: 16px Lato;
-    font-weight: 900;
-    padding: 10px;
+
+#form-title {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #0099ff;
+    text-align: center;
 }
 
-#register-title {
-    width: 200px;
+.register-link {
+    display: inline-block;
+    background-color: darkslategrey;
+    color: white;
+    width: 160px;
+    border-radius: 10px;
+    font-weight: 3;
+    font-size: 16px;
+    position: center;
+    line-height: 30px;
+}
+
+.register-link:hover {
+    color: #0099ff;
+}
+
+#register-request-button, #login-request-button{
+    display: inline-block;
+    background-color: #0099ff;
+    color: white;
+    width: 150px;
+    border-radius: 30px;
+    padding: 7px;
+    margin: 25px;
+    font-weight: 3;
+    font-size: 18px;
+    position: center;
+    line-height: 30px;
+}
+
+#register-request-button:hover{
+    color: black;
+    cursor: pointer;
 }
 
 .main-content {

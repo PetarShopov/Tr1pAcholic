@@ -3,7 +3,7 @@ class PostView {
         this._wrapperSelector = wrapperSelector;
         this._mainContentSelector = mainContentSelector;
     }
-    
+
     showCreatePostPage(data, isLoggedIn) {
         let _that = this;
         let templateUrl;
@@ -21,9 +21,9 @@ class PostView {
             $.get('templates/create-post.html', function (template) {
                 var renderedContent = Mustache.render(template, null);
                 $(_that._mainContentSelector).html(renderedContent);
-                
+
                 $('#author').val(data.fullname);
-                
+
                 $('#create-new-post-request-button').on('click', function (ev) {
                     let title = $('#title').val();
                     let author = $('#author').val();
@@ -39,6 +39,7 @@ class PostView {
 
                     triggerEvent('createPost', data);
                 })
+
             });
         })
     }

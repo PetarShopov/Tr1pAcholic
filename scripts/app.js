@@ -20,10 +20,10 @@
         appKey,
         appSecret,
         _guestCredentials);
-    
+
     authService.initAuthorizationType("Kinvey");
 
-    let requester = new Requester(authService);    
+    let requester = new Requester(authService);
 
     let selector = ".wrapper";
     let mainContentSelector = ".main-content";
@@ -40,8 +40,8 @@
     let postView = new PostView(selector, mainContentSelector);
     let postController = new PostController(postView, requester, baseUrl, appKey);
     // functionality added
-    
-    
+
+
     initEventServices();
 
     onRoute("#/", function () {
@@ -63,6 +63,11 @@
     onRoute("#/login", function () {
         // Show the login page...
         userController.showLoginPage(authService.isLoggedIn())
+    });
+
+    onRoute("#/about", function () {
+        // Show the login page...
+        userController.showAboutPage(authService.isLoggedIn())
     });
 
     onRoute("#/register", function () {
