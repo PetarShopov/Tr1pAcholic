@@ -6,20 +6,11 @@ body {
 }
 
 .wrapper {
-    
     margin: 0 auto;
     min-height: 739px;
     width: 100%;
     position: relative;
     display: inline-block;
-}
-
-hr {
-    color: rgba(255, 255, 255, 0.5);
-    margin: 15px auto;
-    border: none;
-    border-bottom: 1px solid #0099ff;
-    width: 100%;
 }
 
 main {
@@ -48,7 +39,6 @@ header {
     text-transform: uppercase;
     text-align: center;
 }
-
 
 .single-menu-element-link {
     display: block;
@@ -133,7 +123,7 @@ footer {
     margin: 30px 150px 0px 140px;
 }
 
-/*dropdown.*/
+/*dropdown*/
 .dropbtn {
     display: inline-block;
     color: white;
@@ -141,7 +131,6 @@ footer {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 
 #dropdown:hover #dropbtn {
     color: #0099ff;

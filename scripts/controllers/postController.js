@@ -33,20 +33,4 @@ class PostController {
             }
         );
     }
-
-    deletePost(requestData) {
-        let requestUrl = this._baseServiceUrl;
-
-        this._requester.delete(
-            requestUrl,
-            requestData,
-            function success (data) {
-                showPopup('success', "You have successfully delete selected post.");
-                redirectUrl("#/");
-            },
-            function error (data) {
-                showPopup('error', "An error has occurred while attempting to delete selected post.");
-            }
-        );
-    }
 }
